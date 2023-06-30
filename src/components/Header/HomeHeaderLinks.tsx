@@ -14,7 +14,11 @@ type Props = {
   showRedirectModal: (to: string) => void;
 };
 
-type HomeLink = { label: string; link: string; isHomeLink?: boolean | false };
+type HomeLink = {
+  label: string;
+  link: string;
+  isHomeLink?: boolean | false;
+};
 
 export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp, showRedirectModal }: Props) {
   const HOME_MENUS: HomeLink[] = [
@@ -45,7 +49,7 @@ export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp,
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src={logoImg} alt="GMX Logo" />
+            <img src={logoImg} alt="OLYEX Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
